@@ -1,9 +1,13 @@
+import NavBar from "./components/NavBar";
+
 function App() {
   return (
     <div className="container-fluid min-vh-100">
       {/* 1. Top Navbar Row (Spans all 12 columns) */}
-      <header className="row bg-warning p-3">
-        <div className="col-12">Nav</div>
+      <header className="row p-3">
+        <div className="col-12">
+          <NavBar />
+        </div>
       </header>
 
       {/* 2. Content Row */}
