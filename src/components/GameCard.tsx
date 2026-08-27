@@ -1,4 +1,5 @@
 import type { Game } from "../hooks/useGames";
+import PlatformIconList from "./PlatformIconList";
 
 interface Props {
   game: Game;
@@ -15,9 +16,7 @@ const GameCard = ({ game }: Props) => {
       />
       <div className="card-body">
         <h5 className="card-title fw-bold ">{game.name}</h5>
-        <p className="card-text text-secondary">
-          This is a longer card with supporting text below as a natural lead-in.
-        </p>
+        <PlatformIconList platforms={game.parent_platforms.map(p => p.platform )} />
       </div>
     </div>
   );
