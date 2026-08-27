@@ -1,3 +1,4 @@
+import GameGrid from "./components/GameGrid";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
         </aside>
 
         {/* Main Content: Takes full width (12) on mobile, and remaining 10 columns on large screens */}
-        <main className="col-12 col-lg-10 bg-primary text-white p-3">
-          Main (Game Grid)
+        <main className="col-12 col-lg-10  text-white p-3">
+          <GameGrid />
         </main>
       </div>
     </div>
