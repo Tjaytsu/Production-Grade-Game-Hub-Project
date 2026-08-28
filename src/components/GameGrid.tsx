@@ -1,5 +1,6 @@
 import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
+import GameCardContainer from "./GameCardContainer";
 import GameCardSkeleton from "./GameCardSkeleton";
 
 const GameGrid = () => {
@@ -15,13 +16,17 @@ const GameGrid = () => {
         {isLoading &&
           skeletons.map((skeleton) => (
             <div className="col" key={skeleton}>
-              <GameCardSkeleton />
+              <GameCardContainer>
+                <GameCardSkeleton />
+              </GameCardContainer>
             </div>
           ))}
         {games.map((game) => (
           /* Wrap EACH card in its own column */
           <div className="col" key={game.id}>
-            <GameCard game={game} />
+            <GameCardContainer>
+              <GameCard game={game} />
+            </GameCardContainer>
           </div>
         ))}
       </div>

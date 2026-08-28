@@ -1,11 +1,8 @@
 const GameCardSkeleton = () => {
   return (
-    <div className="card h-100 rounded-2 overflow-hidden border-0 shadow-sm">
+    <div>
       {/* Image Skeleton Box */}
-      <div
-        className="placeholder-glow"
-        style={{ height: "200px" }}
-      >
+      <div className="placeholder-glow" style={{ height: "200px" }}>
         <span className="placeholder w-100 h-100 bg-secondary opacity-25"></span>
       </div>
 
