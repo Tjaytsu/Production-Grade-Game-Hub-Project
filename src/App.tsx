@@ -1,4 +1,5 @@
 import GameGrid from "./components/GameGrid";
+import GenreList from "./components/GenreList";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       {/* 2. Content Row */}
       <div className="row">
         {/* Aside Sidebar: Hidden on small screens, occupies 2 of 12 columns on large screens */}
-        <aside className="col-lg-2 d-none d-lg-block bg-info p-3">
-          Aside (Genres)
+        <aside className="col-lg-2 d-none d-lg-block p-3">
+          <GenreList />
         </aside>
 
         {/* Main Content: Takes full width (12) on mobile, and remaining 10 columns on large screens */}
