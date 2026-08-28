@@ -1,4 +1,5 @@
 import type { Game } from "../hooks/useGames";
+import getCroppedImageUrl from "../services/image-url";
 import CriticScore from "./CriticScore";
 import PlatformIconList from "./PlatformIconList";
 
@@ -10,7 +11,7 @@ const GameCard = ({ game }: Props) => {
   return (
     <div className="card h-100 rounded-2 overflow-hidden border-0 shadow-sm">
       <img
-        src={game.background_image}
+        src={getCroppedImageUrl(game.background_image)}
         alt={game.name}
         className="card-img-top"
         style={{ height: "200px", objectFit: "cover" }}
