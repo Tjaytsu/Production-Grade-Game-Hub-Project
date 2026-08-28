@@ -39,7 +39,7 @@ const ColorModeSwitch = () => {
         ) : (
           <BsSun color="orange" />
         )}
-        <span className="ms-1 fs-6 fw-semibold text-nowrap">
+        <span className="ms-1 fs-6 fw-semibold text-nowrap ">
           {theme === "dark" ? "Dark Mode" : "Light Mode"}
         </span>
       </label>

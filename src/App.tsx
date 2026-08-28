@@ -15,7 +15,7 @@ function App() {
       {/* 2. Content Row */}
       <div className="row">
         {/* Aside Sidebar: Hidden on small screens, occupies 2 of 12 columns on large screens */}
-        <aside className="col-lg-2 d-none d-lg-block p-3">
+        <aside className="col-lg-2 d-none d-lg-block p-3 px-3">
           <GenreList />
         </aside>
 
